@@ -9,10 +9,10 @@ const educationData = [
     gpa: "3.14",
   },
   {
-    degree: "Bachelor of Engineering in Computer Science",
-    institution: "Tribhuvan University",
-    period: "2012 - 2016",
-    location: "Kathmandu, Nepal",
+    degree: "Bachelor of Information Technology",
+    institution: "London Metropolitan University",
+    period: "2015 - 2018",
+    location: "Pokhara, Nepal",
     gpa: "3.6",
   }
 ];

@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -19,7 +20,20 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex flex-col items-center"
           >
+            <div className="mb-8 relative">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Sunil Timilsina"
+                  width={192}
+                  height={192}
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-rose-600">
               SUNIL TIMILSINA
             </h1>
